@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FactoryPattern
 {
-    enum Action {
+    public enum Action {
         Cooling,
         Warming
 

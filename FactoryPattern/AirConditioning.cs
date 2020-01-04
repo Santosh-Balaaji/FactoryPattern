@@ -6,6 +6,14 @@ namespace FactoryPattern
 {
     public class AirConditioning
     {
-        public void 
+        public IAirConditioning GetStatus(Action action)
+        {
+            switch (action)
+            {
+                case Action.Cooling : return new Cooling();
+                case Action.Warming : return new Warming();
+                default: throw new NotSupportedException();
+            }
+        }
     }
 }

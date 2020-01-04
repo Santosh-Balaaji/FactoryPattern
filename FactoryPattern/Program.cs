@@ -6,7 +6,9 @@ namespace FactoryPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            AirConditioning status = new AirConditioning();
+            var result =status.GetStatus(Action.Cooling);
+            result.Operate();
         }
     }
 }

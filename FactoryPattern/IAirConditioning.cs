@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FactoryPattern
 {
-    interface IAirConditioning
+    public interface IAirConditioning
     {
         void Operate();
     }
